@@ -3,6 +3,7 @@
 \usepackage{paralist}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{subcaption}
 
 \graphicspath{{./images/}}
 
@@ -649,7 +650,7 @@ decreases, \emph{supply} increases. See Figure \ref{fig:supply_quant_shift} belo
 as a reference.
 \begin{figure}[ht]
     \center
-    \includegraphics[height=5.5cm, width=7cm]{supply_quant_shift.jpg}
+    \includegraphics[height=4.5cm, width=6cm]{supply_quant_shift.jpg}
     \caption{As supply increases from as S1 shifts to S2, quantity increases as
     the equilibrium points shift along the demand curve from point A to point B.}
     \label{fig:supply_quant_shift}
@@ -667,7 +668,7 @@ actually pay for it at the equilibrium price is called \emph{consumer surplus}.
 Figure \ref{fig:consumer_suprlus} below shows the area which consumer surplus lies.
 \begin{figure}[ht]
     \center
-    \includegraphics[height=5.5cm, width=7cm]{consumer_surplus.jpg}
+    \includegraphics[height=4.5cm, width=6cm]{consumer_surplus.jpg}
     \caption{Red area indicates where consumer surplus lies.}
     \label{fig:consumer_suprlus}
 \end{figure}
@@ -680,14 +681,266 @@ and how much they are actually receiving at equilibrium.
 Figure \ref{fig:producer_surplus} below shows the area which producer surplus lies.
 \begin{figure}[ht]
     \center
-    \includegraphics[height=5.5cm, width=7cm]{producer_surplus.jpg}
+    \includegraphics[height=4.5cm, width=6cm]{producer_surplus.jpg}
     \caption{Red area indicates where producer surplus lies.}
     \label{fig:producer_surplus}
 \end{figure}
 
+\section{Unit 3: Elasticity}
+Elasticity is how much the price of a good fluctuates depending on decrease in
+demand. If the price of a product increases and the amount demanded decreases
+by a lot, then the product is \emph{elastic}. If it decreases by a little, or
+not at all, then the product is \emph{inelastic}.
 
+\subsection{Demand Curves and Elasticity}
+\subsubsection{Price Elasticity of Demand}
+\emph{Price elasticity of demand} measures the responsiveness of buyers to a
+price change. In other words, it measures the relationship between the percentage
+change in the amount of purchased and the percentage change in the price.
 
+\subsubsection{Derivation of a Demand Curve}
+The type of data that economist use to estimate the shape and location of a
+product's demand curve are:
+\begin{enumerate}
+    \item \textbf{Historical Data}
 
+        Price and quantity data show how consumers have responded to past changes
+        in the price and quantity demand of the product. Price and quantity demand
+        changes must be looked at in isolation of other variables. \textbf{It is
+        important to estimate the price and quantity demand changes assuming
+        other variables remain constant (ceteris paribus).}
+    \item \textbf{Surveys}
 
+        If you ask customers their input on how they would respond to a future
+        change in the price of the product, you may not get accurate data, but
+        it will allow economist to estimate the location and slope of a demand
+        curve. When you know the location and slope of a product's demand curve,
+        you can determine its \emph{price elasticity of demand}.
+\end{enumerate}
+
+\subsubsection{Formula for Price Elasticity of Demand}
+The law of demand states that as the price of a product decreases, quantity
+demand increases, and vice-versa. Elasticity measures \textbf{how much} less
+people buy of that product when the prices rises, and vice-versa. Price 
+elasticity of demand is determine by looking at the ratio of:
+\begin{description}
+    \item \textbf{e = The percentage change in quantity demand divided by the
+        percentage change in the price of the product.}
+    \item or
+    \item \textbf{e = $\frac{\text{\% change in Q}}{\text{\% change in P}}$ }
+        
+        \item where:
+
+        \begin{enumerate}
+            \item \textbf{The \% change in Q = $\frac{\text{change in quantity
+                demanded}}{\text{average of the two quantities in demand}}$}
+            \item \textbf{The \% change in P = $\frac{\text{change in price}}
+            {\text{average of the two prices}}$}
+        \end{enumerate}
+
+    \item The formula above is called the "arc" formula. It is the most accurate
+        and most commonly used in economics.
+\end{description}
+
+\subsection{Elasticity and the Slope of the Demand Curve}
+\subsubsection{Demand Curves and Elasticity}
+Elasticity affects the slope of a product's demand curve. A greater slope, the
+steeper the demand curve is and a less-elastic product. Figure \ref{fig:dem_cur_ela}
+below is a visualization of what each line means in terms of elasticity.
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=4.5cm, width=6cm]{demand_curve_elasticity.jpg}
+    \caption{In line D1, you can see when the cost goes down from \$9 to \$8,
+    the demand only slightly increases (from 60 to 68), while the line D2--when
+    the cost goes down from \$9 to \$8, the demand increases a lot more (from
+    60 to 100). These are the effects of slope and elasticity.}
+    \label{fig:dem_cur_ela}
+\end{figure}
+
+\subsubsection{Perfect Elasticity and Perfect Inelasticity}
+\emph{Perfect elasticity} is when a product can only be set at one price. If the price
+change then the quantity demand changes to zero.
+
+\emph{Perfect inelasticity} is when a product can only be bought at one quantity
+size, no matter the price of the product.
+
+Figure \ref{fig:perf_elast} below is a graph of both perfect elasticity and
+perfect inelasticity.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[height=4.5cm, width=6cm]{perfect_elasticity.jpg}
+    \caption{Example of both perfect elasticity and inelasticity}
+    \label{fig:perf_elast}
+\end{figure}
+
+\subsection{Determinants of Price Elasticity of Demand}
+\subsubsection{Elasticity Determinants}
+Some products are elastic (buyers are price sensitive), and some products are 
+inelastic (buyers are not price sensitive). For some products (cars vs salt), 
+price elasticity of demand can make a huge impact for the buyer (10\% increase 
+in a car's value has more impact than 10\% increase in the value of salt.)
+
+There are three determinants of price elasticity of demand:
+\begin{enumerate}
+    \item \textbf{The availability of close substitutes}
+        
+        If there are a lot of close substitutes available, then people will
+        react strongly to price increases. Price elasticity of demand is high.
+
+    \item \textbf{The importance of the product's cost in one's budget}
+
+        If a product is inexpensive to a consumer's budget, then increases in
+        price will not matter that much. Mostly everyone has a budget for salt,
+        so a 10\% increase will not impact the consumer as much. But if the
+        consumer wants to purchase a car (clearly, a car is not on a consumer's 
+        usual budget), a 10\% will matter a lot more.
+
+    \item \textbf{The period of time under consideration}
+
+        Price elasticity of demand is greater the longer it takes for a product
+        to increase its price. This gives consumers more time to adjust to
+        increasing prices whereas if it is an immediate jump in price, it will
+        cause more issues for consumers.
+
+        For example, if the price of gas increases immediately, car owners may
+        not decrease the mileage they drive in the first week, but after a
+        couple of years, they may buy a more fuel-efficient car, move closer to
+        school/work, etc.
+\end{enumerate}
+
+\subsubsection{Elasticity and the Effect of a Tax Change on the Price of the
+Product}
+
+How much equilibrium price of a product will increase with taxes depends on the
+product's elasticity. The demand curve slope can help determine the price of the
+products after a new tax is imposed. Figure \ref{fig:combined} below are two
+graphs to show the difference in prices with different slopes.
+
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}{0.41\textwidth}
+        \centering
+        \includegraphics[width=\textwidth] {elasticity_tax_minimal.jpg}
+        \caption{With higher elasticity, you will get lower price change (less
+        steep slope).}
+        \label{fig:left_elas}
+    \end{subfigure}
+    \hspace{1mm}
+    \begin{subfigure}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth] {elasticity_tax_max.jpg}
+        \caption{With lower elasticity, you will get a higher price change 
+        (steeper slope).}
+        \label{fig:right_elas}
+    \end{subfigure}
+    \caption{Side-by-side comparison visualizing a 50\textcent \space tax
+        increase with two different elasticity slopes.}
+    \label{fig:combined}
+\end{figure}
+In general, for less-elastic products (steeper demand curves), the burden of the
+tax is mostly on the consumer. For more-elastic products, the burden of the tax
+is mostly on the suppliers.
+
+\subsection{Elasticity and Total Revenue}
+\subsubsection{Definition of Elastic, Inelastic, and Unit Elastic Demand}
+By definition:
+\begin{description}
+    \item \textbf{A product is elastic when its elasticity is greater than 1.}
+
+        When a product is elastic and its price changes, the percentage change
+        in quantity demanded is greater than the percentage change in the price.
+
+        As an example, if buyers purchase 20\% fewer products as a result of a
+        10\% price increase, then the product is elastic.
+    \item \textbf{A product is inelastic when its elasticity is less than 1.}
+
+        The numerator (percentage change in quantity demanded) of the elasticity
+        formula is less than the denominator (percentage change in price).
+
+        As an example, if buyers purchase 6\% fewer products as a result of a 
+        15\% increase, then the product is inelastic.
+    \item \textbf{A product is unit elastic when its elasticity is equal to 1.}
+
+        If a product's price rises by 8\% and its quantity demanded decreases by
+        8\%, then the product is unit elastic.
+\end{description}
+
+\subsubsection{Elasticity and Revenue}
+A businesses total revenue is equal to the number of products it sells times the
+price of the product, therefore:
+\begin{description}
+    \item \textbf{Total Revenue = Price times Quantity}
+    \item or
+    \item \textbf{$TR = P \times Q$}
+\end{description}
+
+If a product is \emph{elastic}, the percentage change in the quantity demanded
+change is greater than the percentage change in the price. Therefore, for an
+elastic product, if the price increases, the percentage change in the quantity
+demanded decreases by a greater amount, and the firm's revenue will decrease,
+and vice-versa.
+
+if a product is \emph{inelastic}, the percentage change in the quantity demanded
+change is smaller than the percentage change in the price. Therefore, for an 
+inelastic product, if the price increases, the percentage change in the quantity 
+demanded decreases by a smaller amount, and the firm's revenue will increase,
+and vice-versa.
+
+In summary:
+\begin{description}
+    \item \textbf{When a product is elastic and its price falls, total revenue
+        \\increases.}
+    \item \textbf{When a product is elastic and its price rises, total revenue
+        \\decreases.}
+    \item \textbf{When a product is inelastic and its price rises, total revenue
+        \\increases.}
+    \item \textbf{When a product is inelastic and its price falls, total revenue
+        \\decreases.}
+    \item \textbf{When a product is unit elastic and its price changes, total
+        \\revenue remains constant.}
+\end{description}
+
+\subsection{Income Elasticity of Demand, Cross Price Elasticity of Demand, and 
+Price Elasticity of Supply}
+\subsubsection{Income Elasticity of Demand}
+Income elasticity of Demand measures the percentage change in a buyer's purchase
+of a product as a result of a percentage change in their income. Income elasticity
+is:
+\begin{description}
+    \item $e_i = \frac{\textbf{percentage change in demand}}
+                      {\textbf{percentage change in income}}$ 
+    \item or
+    \item $e_i = \frac{\textbf{(change in demand / average demand)}}
+                      {\textbf{(change in income / average income)}}$
+\end{description}
+
+If the income elasticity demand is \emph{positive}, that means the buyer is
+purchasing a normal good with their increased income.
+If the income elasticity \emph{demand} is negative, that means the buyer is
+purchasing an inferior good, therefore the buyer can afford more expensive
+goods if they decide to purchase fewer of the inferior goods (the numbers we
+used to calculate the income elasticity).
+
+\subsubsection{Cross Price Elasticity of Demand}
+Cross price elasticity of demand can measure the price change of one product's 
+affect on the demand for another substitute product (i.e apples and oranges).
+
+The formula for the cross price elasticity of demand for product A relative to
+a price change in product B is:
+\begin{description}
+    \item $e_{cp} =
+        \frac{\textbf{percentage change in the demand for product A}}
+             {\textbf{percentage change in the price os subsituute prodcut B}}$
+    \item or
+    \item $e_{cp} = \frac{\textbf{(change in the quantities of product A /
+                                    average of the quantites of product A)}}
+                          {\textbf{(change in price of product B / 
+                                    average of product B prices)}}$
+\end{description}
+
+\subsubsection{Price Elasticity of Supply}
+Price elasticity of supply measures the percentage change in the quantity 
+supplied by produces divided by the percentage change in the price of the
+product.
 
 \end{document}
